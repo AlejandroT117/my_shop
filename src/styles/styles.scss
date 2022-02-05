@@ -1,0 +1,121 @@
+
+.App-header {
+  background-color: #264653;
+  min-height: auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* mainHeader */
+.mainHeader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.mainHeader .mainLogo{
+  height: 100px;
+  fill: white;
+}
+
+/* menuBar */
+.menuBar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menuBar ul>li{
+  display:inline-flex;
+  padding: 10px 30px;
+  font-size: 1.3rem;
+}
+
+.menuBar ul>li>a{
+  text-decoration: none;
+  color: #e9c46a ;
+}
+.menuBar ul>li:hover{
+  background-color: #2a9d8f;
+  color: #e76f51;
+}
+/* Container */
+.Container{
+  max-width: 1080px;
+  box-sizing: border-box;
+}
+
+.ItemList{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.card{
+  max-width: 350px;
+  height: 530px;
+  margin: 5px;
+  border-radius: 5px;
+
+}
+.card img{
+  height: 50%;
+  /* resize: horizontal; */
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.card img:hover{
+  overflow:unset;
+  /* animation: zoomOutIn 1s ease; */
+  object-fit: contain;
+}
+
+.card .card-body{
+  height: 50%;
+}
+
+/* ItemListContainer */
+.ItemListContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .mainLogo{
+    animation: App-logo-spin infinite alternate 5s ease-in-out;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
+}
+
+@keyframes zoomOutIn{
+  0% {
+    object-fit: cover;
+  }
+  50% {
+    object-fit: contain;
+  }
+  100% {
+    object-fit: cover;
+  }
+}
+

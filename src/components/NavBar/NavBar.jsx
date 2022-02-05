@@ -1,12 +1,12 @@
-import CartWidget from './CartWidget'
-import bike from '../bike.svg';
+import CartWidget from '../CartWidget'
+import bike from '../../bike.svg';
 
 
 const NavBar = () => {
   return (
     <>
       <div className='mainHeader'>
-        <img src={bike} alt="BikeLogo" srcset="" className='mainLogo'/>
+        <img src={bike} alt="BikeLogo" srcSet="" className='mainLogo'/>
 
         <CartWidget height='50' className='cartLogo'/>
       </div>
