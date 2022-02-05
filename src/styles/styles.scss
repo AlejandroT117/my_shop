@@ -60,20 +60,25 @@
   height: 530px;
   margin: 5px;
   border-radius: 5px;
-
+  overflow: hidden;
+  padding: 20px 0;
+}
+.card:hover{
+  box-shadow: rgba(0,0,0,0.3) 0px 5px 5px ;
+  transform: scale(1.02);
 }
 .card img{
   height: 50%;
   /* resize: horizontal; */
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
   transition: all 0.3s ease-in;
+  
 }
 
 .card img:hover{
   overflow:unset;
-  /* animation: zoomOutIn 1s ease; */
-  object-fit: contain;
+  animation: zoomOutIn 1s ease ;
 }
 
 .card .card-body{
@@ -108,14 +113,17 @@
 }
 
 @keyframes zoomOutIn{
-  0% {
-    object-fit: cover;
+  0%{
+    transform: scale(1);
   }
-  50% {
-    object-fit: contain;
+  33%{
+    transform: scale(0.9);
   }
-  100% {
-    object-fit: cover;
+  66%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1.0);
   }
 }
 
