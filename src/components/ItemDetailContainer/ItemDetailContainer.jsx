@@ -5,19 +5,19 @@ import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const { catId } = useParams();
+  const { id } = useParams();
 
-  console.log(loading);
+  console.log(id);
 
   useEffect(() => {
     setLoading(true);
 
     askForData()
       .then((res) => {
-        if (catId) {
-          const filtered = res.find((el) => el.id === Number(catId));
+        if (id) {
+          const filtered = res.find((el) => el.id === Number(id));
           setItem(filtered);
         }
         console.log(item);
@@ -28,7 +28,7 @@ export const ItemDetailContainer = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [catId]);
+  }, [id]);
 
   return (
     <div className="container my-5 ItemListContainer">

@@ -26,7 +26,7 @@ function App() {
             <Route path='/' element={<Home nombre='Alejandro' />}/>
             <Route path='/productos' element={<ItemListContainer nombre='Alejandro' />}/>
             <Route path='/productos/:catId' element={<ItemListContainer nombre='Alejandro' />}/>
-            <Route path='/detail/:catId' element={<ItemDetailContainer/>}/>
+            <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
             {/* <Route path='/poke-api' element={<PokeApi/>}/> */}
             <Route path='/contacto' element={<Contacto/>}/>
 
