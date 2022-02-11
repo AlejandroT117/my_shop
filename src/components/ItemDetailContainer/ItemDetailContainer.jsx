@@ -31,7 +31,7 @@ export const ItemDetailContainer = () => {
   }, [catId]);
 
   return (
-    <div className="ItemListContainer">
+    <div className="container my-5 ItemListContainer">
       {loading ? <h2>Loading...</h2> : <ItemDetail {...item} />}
     </div>
   );

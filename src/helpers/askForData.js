@@ -4,6 +4,6 @@ export const askForData =() =>{
   return new Promise ((res, rej)=>{
     setTimeout(() => {
       res(data)
-    }, 1000);
+    }, 500);
   })
 }

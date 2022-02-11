@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 export const Item =({id, nombre, desc, precio, img, stock})=>{
 
   return(
-    <Card style={{with: '30%'}}>
-      <Card.Img variant="top" src={img} alt={nombre}/>
+    <Card>
+      <Card.Img variant="top" src={require(`../../img/${img}`)} alt={nombre}/>
       <Card.Body>
           <Card.Title>{nombre}</Card.Title>
           <Card.Text>
