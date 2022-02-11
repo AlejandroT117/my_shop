@@ -5,7 +5,8 @@
     "desc": "20",
     "precio": "1499",
     "img": "https://m.media-amazon.com/images/I/71WX6wVepIL._AC_SX466_.jpg", 
-    "stock": 40
+    "stock": 40,
+    "category": "Geeks"
   }, 
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "desc": "10",
     "precio": "13999",
     "img": "https://m.media-amazon.com/images/I/61zlEVWvQzL._AC_SY355_.jpg", 
-    "stock": 20
+    "stock": 20,
+    "category": "Geeks"
   }, 
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "desc": "5",
     "precio": "399",
     "img": "https://m.media-amazon.com/images/I/81orVm78EkS._AC_SY355_.jpg", 
-    "stock": 60
+    "stock": 60,
+    "category": "Geeks"
   }, 
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "desc": "10",
     "precio": "16999",
     "img": "https://m.media-amazon.com/images/I/61OvV27-44L._AC_SL1500_.jpg", 
-    "stock": 14
+    "stock": 14,
+    "category": "Geeks"
   }, 
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "desc": "7",
     "precio": "999",
     "img": "https://m.media-amazon.com/images/I/61Ph+p48yJL._AC_SY355_.jpg", 
-    "stock": 100
+    "stock": 100,
+    "category": "Audio"
   }, 
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "desc": "30",
     "precio": "478",
     "img": "https://m.media-amazon.com/images/I/51go1YZQLrL._AC_SY355_.jpg", 
-    "stock": 22
+    "stock": 22,
+    "category": "Audio"
   }
 ]

@@ -1,5 +1,6 @@
 import CartWidget from '../CartWidget'
 import bike from '../../bike.svg';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -13,12 +14,12 @@ const NavBar = () => {
 
       <div className='menuBar'>
         <ul >
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Bicicletas de ruta</a></li>
-          <li><a href="#">Bicicletas de montaña</a></li>
-          <li><a href="#">Bicicletas urbanas</a></li>
-          <li><a href="#">Rodillos</a></li>
-          <li><a href="#">Refacciones</a></li>
+          <li><Link to="./">Inicio</Link></li>
+          <li><Link to="./productos">Productos</Link></li>
+          <li><Link to="./productos/Geeks">Geeks</Link></li>
+          <li><Link to="./productos/Audio">Audio</Link></li>
+          <li><Link to="./poke-api">Pokemon-Api</Link></li>
+          <li><Link to="./contacto">Contacto</Link></li>
         </ul>
       </div>
 

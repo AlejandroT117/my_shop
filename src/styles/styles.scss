@@ -43,8 +43,9 @@
 }
 /* Container */
 .Container{
-  max-width: 1080px;
+  /* max-width: 1200px; */
   box-sizing: border-box;
+  width: 100%;
 }
 
 .ItemList{
@@ -53,6 +54,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
+  width: 100%;
 }
 
 .card{
@@ -89,12 +91,19 @@
 .ItemListContainer{
   display: flex;
   align-items: center;
-  justify-content: center;
   min-height: 80vh;
   width: 100%;
   flex-direction: column;
 }
 
+/* Poke api */
+.row.poke-api{
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 150px;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .mainLogo{
