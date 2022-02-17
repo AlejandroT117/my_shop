@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-const key = "1234";
-const q = "pikachu";
 
 //query params
 //const url = `https://api.giphy.com/v1/gifs/search?api_key=${KEY}&${q}=pikachu&limit=10`

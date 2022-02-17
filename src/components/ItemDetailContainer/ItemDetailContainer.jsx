@@ -1,15 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { askForData } from "../../helpers/askForData";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { MiContext } from "../../context/MiContext";
 
 export const ItemDetailContainer = () => {
+
+
+
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const { id } = useParams();
 
-  console.log(id);
+ // console.log(id);
 
   useEffect(() => {
     setLoading(true);
@@ -20,7 +24,7 @@ export const ItemDetailContainer = () => {
           const filtered = res.find((el) => el.id === Number(id));
           setItem(filtered);
         }
-        console.log(item);
+        //console.log(item);
       })
       .catch((res) => {
         console.log(res);
