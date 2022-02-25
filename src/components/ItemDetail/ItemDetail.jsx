@@ -6,7 +6,7 @@ import { ItemCount } from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
 
-export const ItemDetail = ({id, nombre, img, desc, precio, stock, categoria}) => {
+export const ItemDetail = ({id, nombre, img, desc, precio, stock, categoria, descri, oferta}) => {
 
   const [cantidad, setCantidad] = useState(0)
   const {cart, agregarCarrito, isInCart} = useContext(CartContext)
@@ -28,7 +28,10 @@ export const ItemDetail = ({id, nombre, img, desc, precio, stock, categoria}) =>
       <div className='imgDetail'>
           <h3>{nombre}</h3>
           <img src={require(`../../img/${img}`)} alt={nombre} height='600'/>
-          <p>DESCUENTO {desc}%</p>
+          { oferta &&
+            <p>DESCUENTO {desc}%</p>
+          }
+          <p>{descri}</p>
           <h5>Precio: ${precio}</h5>
       </div>
       {

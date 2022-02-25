@@ -3,144 +3,176 @@
     "id": 1,
     "nombre": "Pinarello F12",
     "desc": "10",
+    "descri": "Lorem ipsum",
     "precio": "129999",
     "img": "bikes/pinarello_f12.jpg", 
     "stock": 2,
-    "category": "Bikes"
+    "category": "Bikes",
+    "oferta": false
   }, 
   {
     "id": 2,
     "nombre": "Aurum Black",
     "desc": "5",
+    "descri": "Lorem ipsum",
     "precio": "159000",
     "img": "bikes/aurum_noire.jpeg", 
     "stock": 6,
-    "category": "Bikes"
+    "category": "Bikes",
+    "oferta": false
   }, 
   {
     "id": 3,
     "nombre": "Factor O2",
     "desc": "5",
+    "descri": "Lorem ipsum",
     "precio": "123000",
     "img": "bikes/factor.jpg", 
     "stock": 5,
-    "category": "Bikes"
+    "category": "Bikes",
+    "oferta": false
   }, 
   {
     "id": 4,
     "nombre": "Basso Diamante",
     "desc": "5",
+    "descri": "Lorem ipsum",
     "precio": "165000",
     "img": "bikes/basso.webp", 
     "stock": 5,
-    "category": "Bikes"
+    "category": "Bikes",
+    "oferta": false
   }, 
   {
     "id": 5,
     "nombre": "Willier Trestina",
     "desc": "3",
+    "descri": "Lorem ipsum",
     "precio": "185000",
     "img": "bikes/willier_trestina.jpg", 
     "stock": 5,
-    "category": "Bikes"
+    "category": "Bikes",
+    "oferta": true
   },
   {
     "id": 6,
     "nombre": "Flux Smart 2",
     "desc": "20",
+    "descri": "Lorem ipsum",
     "precio": "18000",
     "img": "entrenamiento/flux_smart_2.png", 
     "stock": 5,
-    "category": "Training"
+    "category": "Training",
+    "oferta": false
   },
   {
     "id": 7,
     "nombre": "Kickr Core",
     "desc": "15",
+    "descri": "Lorem ipsum",
     "precio": "23000",
     "img": "entrenamiento/kickr core.png", 
     "stock": 5,
-    "category": "Training"
+    "category": "Training",
+    "oferta": false
   },
   {
     "id": 8,
     "nombre": "Flux Satori Smart",
     "desc": "25",
+    "descri": "Lorem ipsum",
     "precio": "9000",
     "img": "entrenamiento/Satori Smart.jpg", 
     "stock": 8,
-    "category": "Training"
+    "category": "Training",
+    "oferta": false
   },
   {
     "id": 9,
     "nombre": "Tacx Neo 2T",
     "desc": "25",
+    "descri": "Lorem ipsum",
     "precio": "43000",
     "img": "entrenamiento/tacx neo 2t.png", 
     "stock": 2,
-    "category": "Training"
+    "category": "Training",
+    "oferta": true
   },
   {
     "id": 10,
     "nombre": "Wahoo Kickr",
     "desc": "25",
+    "descri": "Lorem ipsum",
     "precio": "43000",
     "img": "entrenamiento/wahoo kickr.jpg", 
     "stock": 3,
-    "category": "Training"
+    "category": "Training",
+    "oferta": false
   },
   {
     "id": 11,
     "nombre": "Wahoo Snap",
     "desc": "25",
+    "descri": "Lorem ipsum",
     "precio": "13000",
     "img": "entrenamiento/wahoo snap.jpg", 
     "stock": 5,
-    "category": "Training"
+    "category": "Training",
+    "oferta": false
   },
   {
     "id": 12,
     "nombre": "Kit de Reparación",
     "desc": "50",
+    "descri": "Lorem ipsum",
     "precio": "350",
     "img": "mantenimiento/kit_reparación.jpg", 
     "stock": 35,
-    "category": "Maintenance"
+    "category": "Maintenance",
+    "oferta": false
   },
   {
     "id": 13,
     "nombre": "Llaves allen milimétricas",
     "desc": "20",
+    "descri": "Lorem ipsum",
     "precio": "550",
     "img": "mantenimiento/llaves_allen.jpg", 
     "stock": 15,
-    "category": "Maintenance"
+    "category": "Maintenance",
+    "oferta": false
   },
   {
     "id": 14,
     "nombre": "Torquímetro",
     "desc": "30",
+    "descri": "Lorem ipsum",
     "precio": "1000",
     "img": "mantenimiento/torquímetro.jpg", 
     "stock": 35,
-    "category": "Maintenance"
+    "category": "Maintenance",
+    "oferta": false
   },
   {
     "id": 15,
     "nombre": "Platos Ultegra r8000",
     "desc": "30",
+    "descri": "Lorem ipsum",
     "precio": "6000",
     "img": "refacciones/plato_ultegra_r8000.jpg", 
     "stock": 35,
-    "category": "Spares"
+    "category": "Spares",
+    "oferta": false
   },
   {
     "id": 16,
     "nombre": "Duales y Calipers Ultegra r8000",
     "desc": "10",
+    "descri": "Lorem ipsum",
     "precio": "6000",
     "img": "refacciones/duales_calipers_r8000.png", 
     "stock": 5,
-    "category": "Spares"
+    "category": "Spares",
+    "oferta": false
   }
 ]

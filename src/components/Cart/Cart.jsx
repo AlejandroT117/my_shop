@@ -2,12 +2,19 @@ import {BsTrash} from 'react-icons/bs'
 import { useState, useContext, useEffect } from "react"
 import { CartContext } from "../../context/MiContext"
 import { Contenedor } from "../Container/Container"
-import { ItemCount } from '../ItemCount/ItemCount'
+import { Link } from "react-router-dom";
 
 
 export const Cart =()=>{
   const {cart, totalCart, vaciarCarrito, eliminarItem} = useContext(CartContext)
 
+  if(cart.length === 0){
+    return <div className='container my-4'>
+      <h2>Tu carrito está vacío</h2>
+      <Link to='/' className='btn btn-primary'>Volver</Link>
+      
+    </div>
+  }
   return (
     <Contenedor>
       <h1>Tu compra</h1>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { askForData } from "../../helpers/askForData";
 import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import { db } from "../../firebase/config";
+import { collection, getDocs, query, where, Firestore } from "firebase/firestore";
 
 const ItemListContainer = ({ nombre }) => {
   
@@ -15,9 +17,9 @@ const ItemListContainer = ({ nombre }) => {
 
     /* console.log(catId) */
 
-    askForData()
+    /* askForData()
       .then((res) => {
-        /* console.log(res); */
+        
         if (catId){
           const filtered = res.filter(el => el.category === catId)
 
@@ -33,7 +35,35 @@ const ItemListContainer = ({ nombre }) => {
       })
       .finally(() => {
         setLoading(false);
-      });
+      }); */
+
+    
+    //Pedir datos desde firebase
+    
+    //1.- Referencia
+    const productosRef = collection(db, 'productos')
+    const q = catId ? query(productosRef, where("category", "==", catId)): productosRef
+    //2.- Pedir esa referencia
+    getDocs(q)
+      .then((resp)=>{
+        setProducts(
+          resp.docs.map((doc)=> {
+            return ({
+              id:doc.id,
+              ...doc.data()
+            }
+            )
+          })
+        )
+      })
+      .catch((resp) => {
+        console.log(resp);
+      })
+      .finally(() => {
+        setLoading(false);
+      })
+
+
   }, [catId]);
 
   return (

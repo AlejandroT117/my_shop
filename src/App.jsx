@@ -15,8 +15,11 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { Form } from "./components/Form/Form";
 import {CartProvider} from './context/MiContext'
 import { Cart } from "./components/Cart/Cart";
+import {db} from "./firebase/config"
 
 function App() {
+
+
 
   return (
     <CartProvider>

@@ -28,13 +28,13 @@ export const NavBar = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="./">Inicio</Nav.Link>
-              <Nav.Link href='./productos'>Todo</Nav.Link>
-              <Nav.Link href='./productos/Bikes'>Bicicletas</Nav.Link>
-              <Nav.Link href='./productos/Training'>Entrenamiento</Nav.Link>
-              <Nav.Link href='./productos/Maintenance'>Mantenimiento</Nav.Link>
-              <Nav.Link href='./productos/Spares'>Refacciones</Nav.Link>
-              <Nav.Link href='./productos/contacto'>Contacto</Nav.Link>
-              <Nav.Link href='./productos/form'>Login</Nav.Link>
+              <Nav.Link href='/productos'>Todo</Nav.Link>
+              <Nav.Link href='/productos/Bikes'>Bicicletas</Nav.Link>
+              <Nav.Link href='/productos/Training'>Entrenamiento</Nav.Link>
+              <Nav.Link href='/productos/Maintenance'>Mantenimiento</Nav.Link>
+              <Nav.Link href='/productos/Spares'>Refacciones</Nav.Link>
+              <Nav.Link href='/productos/contacto'>Contacto</Nav.Link>
+              <Nav.Link href='/productos/form'>Login</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

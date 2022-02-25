@@ -1,8 +1,9 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { askForData } from "../../helpers/askForData";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { MiContext } from "../../context/MiContext";
+import { db } from "../../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
 
@@ -17,7 +18,8 @@ export const ItemDetailContainer = () => {
 
   useEffect(() => {
     setLoading(true);
-
+    /* 
+    //PEdir datos de forma local
     askForData()
       .then((res) => {
         if (id) {
@@ -31,7 +33,27 @@ export const ItemDetailContainer = () => {
       })
       .finally(() => {
         setLoading(false);
+      }); */
+
+    //Pedir datos co firebase
+    // 1.- Referencia al documento
+    const docRef = doc(db, "productos", id)
+    // 2.- Petinición 
+    getDoc(docRef)
+      .then((doc)=>{
+        setItem(
+          {id:doc.id, ...doc.data()}
+          )
+      })
+      .catch((res) => {
+        console.log(res);
+      })
+      .finally(() => {
+        setLoading(false);
       });
+
+
+
   }, [id]);
 
   return (
