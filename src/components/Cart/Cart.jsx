@@ -36,9 +36,12 @@ export const Cart =()=>{
       <h2>Total: ${totalCart()}</h2>
 
       <div className="my-2">
-        <button className="btn btn-danger" onClick={vaciarCarrito}>
+        <button className="btn btn-danger mx-3" onClick={vaciarCarrito}>
           Vaciar Carrito
         </button>
+        <Link to='/checkout' className='btn btn-success mx-3'> Comprar
+        </Link>
+
       </div>
 
     </Contenedor>

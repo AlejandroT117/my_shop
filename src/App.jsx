@@ -15,7 +15,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { Form } from "./components/Form/Form";
 import {CartProvider} from './context/MiContext'
 import { Cart } from "./components/Cart/Cart";
-import {db} from "./firebase/config"
+import  { Checkout}  from './components/Checkout/Checkout'
 
 function App() {
 
@@ -44,6 +44,7 @@ function App() {
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/form" element={<Form />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
         </div>

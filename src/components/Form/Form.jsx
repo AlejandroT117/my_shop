@@ -1,18 +1,6 @@
 import { useState } from "react";
 
 export const Form = () => {
-  /*  Esto no se hace
-  const [nombre, setNombre] = useState('')
-  const [email, setEmail] = useState('')
-
-  const handleNombre = (e) => {
-    setNombre(e.target.value);
-    console.log(e.target);
-  };
-
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };*/
 
   const [values, setValues] = useState({
     nombre: "",
